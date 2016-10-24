@@ -46,7 +46,17 @@
          </li>
          <li><a href="#">Пункт 3</a></li>
          <li><a href="#">Пункт 4</a></li> 
-      </ul>   
+      </ul>
+      <!-- Форма входа -->
+      <form action="" class="navbar-form navbar-right hidden-sm">
+        <div class="form-group">
+          <input type="text" placeholder="E-mail" value="" class="form-control">
+        </div>
+        <div class="form-group">
+          <input type="password" placeholder="Password" value="" class="form-control">
+        </div>
+        <button type="text-submit" class="btn btn-primary"><i class="fa fa-sign-in">Войти</i></button>
+      </form>   
       </div>
     </div>
 </div>
@@ -205,12 +215,78 @@
       <a href="#spoiler-1" data-toggle="collapse" class="btn btn-primary spoiler collapsed">Spoiler</a>
       <div class="collapse" id="spoiler-1">
         <div class="well">
-          <p>text</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa dolores perferendis voluptatum laborum, optio nemo ad earum ratione fuga odio minima, tempore delectus fugit voluptas soluta sed in consectetur blanditiis!</p>
         </div>
       </div>
     </div>
   </div>
 </div>
+<!-- Аккордеон -->
+<div class="container">
+  <div class="row">
+    <div class="col-md-6">
+      <div id="accordeon" class="panel-group">
+        <div class="panel panel-success">
+          <div class="panel-heading">
+            <h4 class="panel-title">
+              <a href="#collapse-1" data-parent="#accordeon" data-toggle="collapse">Открыть первый слайд</a>
+            </h4>
+          </div>
+          <div id="collapse-1" class="panel-collapse collapse in">
+            <div class="panel-body">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid minima eum quisquam quasi dolorem doloremque corporis voluptates quibusdam id sit. Delectus iusto cupiditate deleniti, ut molestias illum earum numquam aliquid.</p>
+            </div>
+          </div>
+        </div>
+        <div class="panel panel-primary">
+          <div class="panel-heading">
+            <h4 class="panel-title">
+              <a href="#collapse-2" data-parent="#accordeon" data-toggle="collapse">Открыть второй слайд</a>
+            </h4>
+          </div>
+          <div id="collapse-2" class="panel-collapse collapse">
+            <div class="panel-body">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid minima eum quisquam quasi dolorem doloremque corporis voluptates quibusdam id sit. Delectus iusto cupiditate deleniti, ut molestias illum earum numquam aliquid.</p>
+            </div>
+          </div>  
+        </div>
+        <div class="panel panel-danger">
+          <div class="panel-heading">
+            <h4 class="panel-title">
+              <a href="#collapse-3" data-parent="#accordeon" data-toggle="collapse">Открыть третий слайд</a>
+            </h4>
+          </div>
+          <div id="collapse-3" class="panel-collapse collapse">
+            <div class="panel-body">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid minima eum quisquam quasi dolorem doloremque corporis voluptates quibusdam id sit. Delectus iusto cupiditate deleniti, ut molestias illum earum numquam aliquid.</p>
+            </div>
+          </div>  
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Модальное окно -->
+<div class="modal fade" id="modal-1">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button class="close" type="button" data-dismiss="modal"><i class="fa fa-close"></i></button>      
+        <h4 class="modal-title">Название окна</h4>
+      </div>
+      <div class="modal-body">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores nulla nesciunt dicta sit totam similique qui, enim porro aliquam, dolorem adipisci quod veritatis mollitia iste rerum veniam perferendis, molestias possimus.</p>
+      </div>
+      <div class="modal-footer">
+        <button class="btn-danger" type="button" data-dismiss="modal">Закрыть</button>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="cold-md-6">
+  <button class="btn btn-success" data-toggle="modal" data-target="#modal-1">Открыть модальное окно</button>
+</div>
+
 <br>
 <br>
 <br>
