@@ -1,0 +1,17 @@
+.btn-group{
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+
+#dropdown-menu{
+	float:left;
+}
+
+a.spoiler::after{
+	content: "[-]";
+}
+
+a.spoiler.collapsed::after{
+	content: "[+]";
+}
+}

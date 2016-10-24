@@ -19,6 +19,8 @@
     <![endif]-->
   </head>
   <body>
+
+  <!-- Навигация -->
 <div class="navbar navbar-inverse navbar-fixed-top">
     <div class="container">
       <div class="navbar-header">
@@ -49,6 +51,8 @@
     </div>
 </div>
 
+<!-- Слайдер -->
+
 <div id="carousel" class="carousel slide">
   <<!--индикаторы слайдов!-->
   <ol class="carousel-indicators">
@@ -57,7 +61,6 @@
     <li data-target="#carousel" data-slide-to="2"></li>
   </ol>
 
-  <!--Слайды!-->
   <div class="carousel-inner">
     <div class="item active">
       <img src="images/1.jpg" alt="">
@@ -82,7 +85,6 @@
     </div>
   </div>
 
-
   <a href="#carousel" class="left carousel-control" data-slide="prev">
     <span class="glyphicon glyphicon-chevron-left"></span>
   </a>
@@ -94,6 +96,9 @@
 <div class="container">
   <div class="row">
   <h1>Название сайта</h1>
+
+  <!-- Кнопки -->
+
   <p>
     <a href="#" class="btn btn-default">Кнопка</a>
     <a href="#" class="btn btn-primary">Кнопка</a>
@@ -130,7 +135,6 @@
         <a href="#" class="btn btn-success"><i class="fa fa-download"></i></a> 
       </div>
     </div>
-    <br>
     <div class="btn-toolbar">  
       <div class="btn-group btn-group-justified">
         <a href="#" class="btn btn-success"><i class="fa fa-spinner"></i></a>
@@ -145,9 +149,73 @@
     </div>   
   </div>
 </div>
-  
-   
+<br>
 
+<!-- Группы кнопок -->
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-6">
+      <div class="btn-group" id="dropdown-menu">
+        <button class="btn btn-success">
+        Выпадающее меню
+        </button>
+        <button class="btn btn-success dropdown-toggle" data-toggle="dropdown">
+          <span class="caret"></span>
+        </button>
+      <ul class="dropdown-menu">
+        <li><a href="#">Кнопка 1</a></li>
+        <li><a href="#">Кнопка 2</a></li>
+        <li><a href="#">Кнопка 3</a></li>
+        <li><a href="#">Кнопка 4</a></li>
+        <li><a href="#">Кнопка 5</a></li>
+      </ul>
+    </div>
+    <div class="col-md-6">
+      
+    </div>
+  </div>
+</div>
+<br>
+<!-- Вкладки -->
+
+<div class="container">
+  <div class="row">
+    <div class="cold-md-6">
+      <div class="tabs">
+        <ul class="nav nav-tabs">
+          <li class="active"><a href="#tab-1" data-toggle="tab">Вкладка 1</a></li>
+          <li><a href="#tab-2" data-toggle="tab">Вкладка 2</a></li>
+          <li><a href="#tab-3" data-toggle="tab">Вкладка 3</a></li>
+        </ul>
+        <div class="tab-content">
+          <div class="tab-pane fade in active" id="tab-1">
+            <p>1.Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+          </div>
+          <div class="tab-pane fade" id="tab-2">
+            <p>2.Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+          </div>
+          <div class="tab-pane fade" id="tab-3">
+            <p>3.Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="cold-md-6">
+      <a href="#spoiler-1" data-toggle="collapse" class="btn btn-primary spoiler collapsed">Spoiler</a>
+      <div class="collapse" id="spoiler-1">
+        <div class="well">
+          <p>text</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<br>
+<br>
+<br>
+<br>
+<br>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="js/bootstrap.js"></script>
     <script src="https://use.fontawesome.com/53600a49fe.js"></script>
