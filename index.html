@@ -6,333 +6,316 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <title>Bootstrap 101 Template</title>
-
     <!-- Bootstrap -->
     <link href="css/bootstrap.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
-
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
   </head>
   <body>
-
-  <!-- Навигация -->
-<div class="navbar navbar-inverse navbar-fixed-top">
-    <div class="container">
-      <div class="navbar-header">
-        <a class="navbar-brand" href="#">Logo</a>
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#responsive-menu">
+    <!-- Навигация -->
+    <div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="#">Logo</a>
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#responsive-menu">
           <span class="sr-only">Открыть Навигацию</span>
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
-        </button>
+          </button>
+        </div>
+        <div class="collapse navbar-collapse" id="responsive-menu">
+          <ul class="nav navbar-nav">
+            <li><a href="#">Пункт 1</a></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Пункт 2<b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">Пункт 1</a></li>
+                <li><a href="#">Пункт 2</a></li>
+                <li><a href="#">Пункт 3</a></li>
+                <li><a href="#">Пункт 4</a></li>
+              </ul>
+            </li>
+            <li><a href="#">Пункт 3</a></li>
+            <li><a href="#">Пункт 4</a></li>
+          </ul>
+          <!-- Форма входа -->
+          <form action="" class="navbar-form navbar-right hidden-sm">
+            <div class="form-group">
+              <input type="text" placeholder="E-mail" value="" class="form-control">
+            </div>
+            <div class="form-group">
+              <input type="password" placeholder="Password" value="" class="form-control">
+            </div>
+            <button type="text-submit" class="btn btn-primary"><i class="fa fa-sign-in">Войти</i></button>
+          </form>
+        </div>
       </div>
-      <div class="collapse navbar-collapse" id="responsive-menu">
-      <ul class="nav navbar-nav">
-         <li><a href="#">Пункт 1</a></li>
-         <li class="dropdown">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Пункт 2<b class="caret"></b></a>
+    </div>
+    <!-- Слайдер -->
+    <div id="carousel" class="carousel slide">
+      <!--индикаторы слайдов!-->
+      <ol class="carousel-indicators">
+        <li class="active" data-target="#carousel" data-slide-to="0"></li>
+        <li data-target="#carousel" data-slide-to="1"></li>
+        <li data-target="#carousel" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="item active">
+          <img src="http://placehold.it/1920x600" alt="">
+          <div class="carousel-caption">
+            <h3>Первый Слайд</h3>
+            <p>Описание</p>
+          </div>
+        </div>
+        <div class="item">
+          <img src="http://placehold.it/1920x600" alt="">
+          <div class="carousel-caption">
+            <h3>Второй Слайд</h3>
+            <p>Описание</p>
+          </div>
+        </div>
+        <div class="item">
+          <img src="http://placehold.it/1920x600" alt="">
+          <div class="carousel-caption">
+            <h3>Третий Слайд</h3>
+            <p>Описание</p>
+          </div>
+        </div>
+      </div>
+      <a href="#carousel" class="left carousel-control" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left"></span>
+      </a>
+      <a href="#carousel" class="right carousel-control" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right"></span>
+      </a>
+    </div>
+    <div class="container">
+      <div class="row">
+        <h1>Название сайта</h1>
+        <!-- Кнопки -->
+        <p>
+          <a href="#" class="btn btn-default" data-toggle="tooltip" data-placement="top" title="Простая подсказка">Кнопка</a>
+          <button type="button" class="btn btn-primary" data-toggle="popover" title="Заголовок окна" data-content="Текст окна" data-trigger="hover">Кнопка</button>
+          <a href="#" class="btn btn-success">Кнопка</a>
+          <a href="#" class="btn btn-warning">Кнопка</a>
+          <a href="#" class="btn btn-info">Кнопка</a>
+          <a href="#" class="btn btn-danger">Кнопка</a>
+        </p>
+        <p>
+          <a href="#" class="btn btn-lg btn-primary">Кнопка</a>
+          <a href="#" class="btn btn-primary">Кнопка</a>
+          <a href="#" class="btn btn-sm btn-primary">Кнопка</a>
+          <a href="#" class="btn btn-xs btn-primary">Кнопка</a>
+        </p>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="btn-toolbar">
+          <div class="btn-group">
+            <a href="#" class="btn btn-success"><i class="fa fa-spinner"></i></a>
+            <a href="#" class="btn btn-success"><i class="fa fa-file"></i></a>
+            <a href="#" class="btn btn-success"><i class="fa fa-download"></i></a>
+          </div>
+          <div class="btn-group">
+            <a href="#" class="btn btn-success"><i class="fa fa-spinner"></i></a>
+            <a href="#" class="btn btn-success"><i class="fa fa-file"></i></a>
+            <a href="#" class="btn btn-success"><i class="fa fa-download"></i></a>
+          </div>
+          <div class="btn-group">
+            <a href="#" class="btn btn-success"><i class="fa fa-spinner"></i></a>
+            <a href="#" class="btn btn-success"><i class="fa fa-file"></i></a>
+            <a href="#" class="btn btn-success"><i class="fa fa-download"></i></a>
+          </div>
+        </div>
+        <div class="btn-toolbar">
+          <div class="btn-group btn-group-justified">
+            <a href="#" class="btn btn-success"><i class="fa fa-spinner"></i></a>
+            <a href="#" class="btn btn-success"><i class="fa fa-file"></i></a>
+            <a href="#" class="btn btn-success"><i class="fa fa-download"></i></a>
+          </div>
+          <div class="btn-group btn-group-vertical">
+            <a href="#" class="btn btn-success"><i class="fa fa-spinner"></i></a>
+            <a href="#" class="btn btn-success"><i class="fa fa-file"></i></a>
+            <a href="#" class="btn btn-success"><i class="fa fa-download"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br>
+    <!-- Группы кнопок -->
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="btn-group" id="dropdown-menu">
+            <button class="btn btn-success">
+            Выпадающее меню
+            </button>
+            <button class="btn btn-success dropdown-toggle" data-toggle="dropdown">
+            <span class="caret"></span>
+            </button>
             <ul class="dropdown-menu">
-              <li><a href="#">Пункт 1</a></li>
-              <li><a href="#">Пункт 2</a></li>
-              <li><a href="#">Пункт 3</a></li>
-              <li><a href="#">Пункт 4</a></li>
+              <li><a href="#">Кнопка 1</a></li>
+              <li><a href="#">Кнопка 2</a></li>
+              <li><a href="#">Кнопка 3</a></li>
+              <li><a href="#">Кнопка 4</a></li>
+              <li><a href="#">Кнопка 5</a></li>
             </ul>
-         </li>
-         <li><a href="#">Пункт 3</a></li>
-         <li><a href="#">Пункт 4</a></li> 
-      </ul>
-      <!-- Форма входа -->
-      <form action="" class="navbar-form navbar-right hidden-sm">
-        <div class="form-group">
-          <input type="text" placeholder="E-mail" value="" class="form-control">
-        </div>
-        <div class="form-group">
-          <input type="password" placeholder="Password" value="" class="form-control">
-        </div>
-        <button type="text-submit" class="btn btn-primary"><i class="fa fa-sign-in">Войти</i></button>
-      </form>   
-      </div>
-    </div>
-</div>
-
-<!-- Слайдер -->
-
-<div id="carousel" class="carousel slide">
-  <!--индикаторы слайдов!-->
-  <ol class="carousel-indicators">
-    <li class="active" data-target="#carousel" data-slide-to="0"></li>
-    <li data-target="#carousel" data-slide-to="1"></li>
-    <li data-target="#carousel" data-slide-to="2"></li>
-  </ol>
-
-  <div class="carousel-inner">
-    <div class="item active">
-      <img src="http://placehold.it/1920x600" alt="">
-      <div class="carousel-caption">
-        <h3>Первый Слайд</h3>
-        <p>Описание</p>
-      </div>
-    </div>
-    <div class="item">
-      <img src="http://placehold.it/1920x600" alt="">
-      <div class="carousel-caption">
-        <h3>Второй Слайд</h3>
-        <p>Описание</p>
-      </div>      
-    </div>
-    <div class="item">
-      <img src="http://placehold.it/1920x600" alt="">
-      <div class="carousel-caption">
-        <h3>Третий Слайд</h3>
-        <p>Описание</p>
-      </div>      
-    </div>
-  </div>
-
-  <a href="#carousel" class="left carousel-control" data-slide="prev">
-    <span class="glyphicon glyphicon-chevron-left"></span>
-  </a>
-  <a href="#carousel" class="right carousel-control" data-slide="next">
-    <span class="glyphicon glyphicon-chevron-right"></span>
-  </a>
-</div>
-
-<div class="container">
-  <div class="row">
-  <h1>Название сайта</h1>
-
-  <!-- Кнопки -->
-
-  <p>
-    <a href="#" class="btn btn-default">Кнопка</a>
-    <a href="#" class="btn btn-primary">Кнопка</a>
-    <a href="#" class="btn btn-success">Кнопка</a>
-    <a href="#" class="btn btn-warning">Кнопка</a>
-    <a href="#" class="btn btn-info">Кнопка</a>
-    <a href="#" class="btn btn-danger">Кнопка</a>
-  </p>
-  <p>
-    <a href="#" class="btn btn-lg btn-primary">Кнопка</a>
-    <a href="#" class="btn btn-primary">Кнопка</a>
-    <a href="#" class="btn btn-sm btn-primary">Кнопка</a>
-    <a href="#" class="btn btn-xs btn-primary">Кнопка</a>
-  </p>
-  </div>
-</div>
-
-<div class="container">
-  <div class="row">
-    <div class="btn-toolbar">  
-      <div class="btn-group">
-        <a href="#" class="btn btn-success"><i class="fa fa-spinner"></i></a>
-        <a href="#" class="btn btn-success"><i class="fa fa-file"></i></a>
-        <a href="#" class="btn btn-success"><i class="fa fa-download"></i></a> 
-      </div>
-      <div class="btn-group">
-        <a href="#" class="btn btn-success"><i class="fa fa-spinner"></i></a>
-        <a href="#" class="btn btn-success"><i class="fa fa-file"></i></a>
-        <a href="#" class="btn btn-success"><i class="fa fa-download"></i></a> 
-      </div>
-      <div class="btn-group">
-        <a href="#" class="btn btn-success"><i class="fa fa-spinner"></i></a>
-        <a href="#" class="btn btn-success"><i class="fa fa-file"></i></a>
-        <a href="#" class="btn btn-success"><i class="fa fa-download"></i></a> 
-      </div>
-    </div>
-    <div class="btn-toolbar">  
-      <div class="btn-group btn-group-justified">
-        <a href="#" class="btn btn-success"><i class="fa fa-spinner"></i></a>
-        <a href="#" class="btn btn-success"><i class="fa fa-file"></i></a>
-        <a href="#" class="btn btn-success"><i class="fa fa-download"></i></a> 
-      </div>
-      <div class="btn-group btn-group-vertical">
-        <a href="#" class="btn btn-success"><i class="fa fa-spinner"></i></a>
-        <a href="#" class="btn btn-success"><i class="fa fa-file"></i></a>
-        <a href="#" class="btn btn-success"><i class="fa fa-download"></i></a> 
-      </div>
-    </div>   
-  </div>
-</div>
-<br>
-
-<!-- Группы кнопок -->
-
-<div class="container">
-  <div class="row">
-    <div class="col-md-6">
-      <div class="btn-group" id="dropdown-menu">
-        <button class="btn btn-success">
-        Выпадающее меню
-        </button>
-        <button class="btn btn-success dropdown-toggle" data-toggle="dropdown">
-          <span class="caret"></span>
-        </button>
-      <ul class="dropdown-menu">
-        <li><a href="#">Кнопка 1</a></li>
-        <li><a href="#">Кнопка 2</a></li>
-        <li><a href="#">Кнопка 3</a></li>
-        <li><a href="#">Кнопка 4</a></li>
-        <li><a href="#">Кнопка 5</a></li>
-      </ul>
-    </div>
-    <div class="col-md-6">
-      
-    </div>
-  </div>
-</div>
-<br>
-<!-- Вкладки -->
-
-<div class="container">
-  <div class="row">
-    <div class="cold-md-6">
-      <div class="tabs">
-        <ul class="nav nav-tabs">
-          <li class="active"><a href="#tab-1" data-toggle="tab">Вкладка 1</a></li>
-          <li><a href="#tab-2" data-toggle="tab">Вкладка 2</a></li>
-          <li><a href="#tab-3" data-toggle="tab">Вкладка 3</a></li>
-        </ul>
-        <div class="tab-content">
-          <div class="tab-pane fade in active" id="tab-1">
-            <p>1.Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
           </div>
-          <div class="tab-pane fade" id="tab-2">
-            <p>2.Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-          </div>
-          <div class="tab-pane fade" id="tab-3">
-            <p>3.Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+          <div class="col-md-6">
+            
           </div>
         </div>
       </div>
-    </div>
-    <div class="cold-md-6">
-      <a href="#spoiler-1" data-toggle="collapse" class="btn btn-primary spoiler collapsed">Spoiler</a>
-      <div class="collapse" id="spoiler-1">
-        <div class="well">
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa dolores perferendis voluptatum laborum, optio nemo ad earum ratione fuga odio minima, tempore delectus fugit voluptas soluta sed in consectetur blanditiis!</p>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-<!-- Аккордеон -->
-<div class="container">
-  <div class="row">
-    <div class="col-md-6">
-      <div id="accordeon" class="panel-group">
-        <div class="panel panel-success">
-          <div class="panel-heading">
-            <h4 class="panel-title">
-              <a href="#collapse-1" data-parent="#accordeon" data-toggle="collapse">Открыть первый слайд</a>
-            </h4>
+      <br>
+      <!-- Вкладки -->
+      <div class="container">
+        <div class="row">
+          <div class="cold-md-6">
+            <div class="tabs">
+              <ul class="nav nav-tabs">
+                <li class="active"><a href="#tab-1" data-toggle="tab">Вкладка 1</a></li>
+                <li><a href="#tab-2" data-toggle="tab">Вкладка 2</a></li>
+                <li><a href="#tab-3" data-toggle="tab">Вкладка 3</a></li>
+              </ul>
+              <div class="tab-content">
+                <div class="tab-pane fade in active" id="tab-1">
+                  <p>1.Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                </div>
+                <div class="tab-pane fade" id="tab-2">
+                  <p>2.Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                </div>
+                <div class="tab-pane fade" id="tab-3">
+                  <p>3.Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                </div>
+              </div>
+            </div>
           </div>
-          <div id="collapse-1" class="panel-collapse collapse in">
-            <div class="panel-body">
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid minima eum quisquam quasi dolorem doloremque corporis voluptates quibusdam id sit. Delectus iusto cupiditate deleniti, ut molestias illum earum numquam aliquid.</p>
+          <div class="cold-md-6">
+            <a href="#spoiler-1" data-toggle="collapse" class="btn btn-primary spoiler collapsed">Spoiler</a>
+            <div class="collapse" id="spoiler-1">
+              <div class="well">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa dolores perferendis voluptatum laborum, optio nemo ad earum ratione fuga odio minima, tempore delectus fugit voluptas soluta sed in consectetur blanditiis!</p>
+              </div>
             </div>
           </div>
         </div>
-        <div class="panel panel-primary">
-          <div class="panel-heading">
-            <h4 class="panel-title">
-              <a href="#collapse-2" data-parent="#accordeon" data-toggle="collapse">Открыть второй слайд</a>
-            </h4>
-          </div>
-          <div id="collapse-2" class="panel-collapse collapse">
-            <div class="panel-body">
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid minima eum quisquam quasi dolorem doloremque corporis voluptates quibusdam id sit. Delectus iusto cupiditate deleniti, ut molestias illum earum numquam aliquid.</p>
+      </div>
+      <!-- Аккордеон -->
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <div id="accordeon" class="panel-group">
+              <div class="panel panel-success">
+                <div class="panel-heading">
+                  <h4 class="panel-title">
+                  <a href="#collapse-1" data-parent="#accordeon" data-toggle="collapse">Открыть первый слайд</a>
+                  </h4>
+                </div>
+                <div id="collapse-1" class="panel-collapse collapse in">
+                  <div class="panel-body">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid minima eum quisquam quasi dolorem doloremque corporis voluptates quibusdam id sit. Delectus iusto cupiditate deleniti, ut molestias illum earum numquam aliquid.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="panel panel-primary">
+                <div class="panel-heading">
+                  <h4 class="panel-title">
+                  <a href="#collapse-2" data-parent="#accordeon" data-toggle="collapse">Открыть второй слайд</a>
+                  </h4>
+                </div>
+                <div id="collapse-2" class="panel-collapse collapse">
+                  <div class="panel-body">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid minima eum quisquam quasi dolorem doloremque corporis voluptates quibusdam id sit. Delectus iusto cupiditate deleniti, ut molestias illum earum numquam aliquid.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="panel panel-danger">
+                <div class="panel-heading">
+                  <h4 class="panel-title">
+                  <a href="#collapse-3" data-parent="#accordeon" data-toggle="collapse">Открыть третий слайд</a>
+                  </h4>
+                </div>
+                <div id="collapse-3" class="panel-collapse collapse">
+                  <div class="panel-body">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid minima eum quisquam quasi dolorem doloremque corporis voluptates quibusdam id sit. Delectus iusto cupiditate deleniti, ut molestias illum earum numquam aliquid.</p>
+                  </div>
+                </div>
+              </div>
             </div>
-          </div>  
-        </div>
-        <div class="panel panel-danger">
-          <div class="panel-heading">
-            <h4 class="panel-title">
-              <a href="#collapse-3" data-parent="#accordeon" data-toggle="collapse">Открыть третий слайд</a>
-            </h4>
           </div>
-          <div id="collapse-3" class="panel-collapse collapse">
-            <div class="panel-body">
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid minima eum quisquam quasi dolorem doloremque corporis voluptates quibusdam id sit. Delectus iusto cupiditate deleniti, ut molestias illum earum numquam aliquid.</p>
-            </div>
-          </div>  
         </div>
       </div>
-    </div>
-  </div>
-</div>
-<!-- Модальное окно -->
-<div class="modal fade" id="modal-1">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <button class="close" type="button" data-dismiss="modal"><i class="fa fa-close"></i></button>      
-        <h4 class="modal-title">Название окна</h4>
+      <!-- Модальное окно -->
+      <div class="modal fade" id="modal-1">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button class="close" type="button" data-dismiss="modal"><i class="fa fa-close"></i></button>
+              <h4 class="modal-title">Название окна</h4>
+            </div>
+            <div class="modal-body">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores nulla nesciunt dicta sit totam similique qui, enim porro aliquam, dolorem adipisci quod veritatis mollitia iste rerum veniam perferendis, molestias possimus.</p>
+            </div>
+            <div class="modal-footer">
+              <button class="btn-danger" type="button" data-dismiss="modal">Закрыть</button>
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="modal-body">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores nulla nesciunt dicta sit totam similique qui, enim porro aliquam, dolorem adipisci quod veritatis mollitia iste rerum veniam perferendis, molestias possimus.</p>
+      <div class="cold-md-6">
+        <button class="btn btn-success" data-toggle="modal" data-target="#modal-1">Открыть модальное окно</button>
       </div>
-      <div class="modal-footer">
-        <button class="btn-danger" type="button" data-dismiss="modal">Закрыть</button>
+      <!-- Прогресс бар -->
+      <div class="container">
+        <div class="row">
+          <div class="progress">
+            <div class="progress-bar progress-bar-primary" style="
+              min-width:2%; width:10%;
+              ">
+            </div>
+            <div class="progress-bar progress-bar-warning" style="
+              min-width:2%; width:10%;
+              ">
+            </div>
+            <div class="progress-bar progress-bar-success" style="
+              min-width:2%; width:10%;
+              ">
+            </div>
+            <div class="progress-bar progress-bar-danger" style="
+              min-width:2%; width:10%;
+              ">
+            </div>
+            <div class="progress-bar progress-bar-info" style="
+              min-width:2%; width:10%;
+              ">
+            </div>
+          </div>
+          <div class="progress progress-bar-success progress-bar-striped active" style="
+            width: 50%;
+            ">
+          </div>
+        </div>
       </div>
-    </div>
-  </div>
-</div>
-<div class="cold-md-6">
-  <button class="btn btn-success" data-toggle="modal" data-target="#modal-1">Открыть модальное окно</button>
-</div>
-
-<!-- Прогресс бар -->
-
-<div class="container">
-  <div class="row">
-    <div class="progress">
-      <div class="progress-bar progress-bar-primary" style="
-          min-width:2%; width:10%;
-          ">
-      </div> 
-
-      <div class="progress-bar progress-bar-warning" style="
-          min-width:2%; width:10%;
-          ">
-      </div>
-
-      <div class="progress-bar progress-bar-success" style="
-          min-width:2%; width:10%;
-          ">
-      </div>
-
-      <div class="progress-bar progress-bar-danger" style="
-          min-width:2%; width:10%;
-          ">
-      </div>
-
-      <div class="progress-bar progress-bar-info" style="
-          min-width:2%; width:10%;
-          ">
-
-      </div>
-    </div>
-    <div class="progress progress-bar-success progress-bar-striped active" style="
-    width: 50%;
-    ">     
-    </div>
-  </div>
-</div>
-
-
-<br>
-<br>
-<br>
-<br>
-<br>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script src="js/bootstrap.js"></script>
-    <script src="https://use.fontawesome.com/53600a49fe.js"></script>
-  </body>
-</html>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+      <script src="js/bootstrap.js"></script>
+      <script src="https://use.fontawesome.com/53600a49fe.js"></script>
+      <script>
+      $(function(){
+      $('[data-toggle="tooltip"]').tooltip();
+      $('[data-toggle="popover"]').popover();
+      });
+      </script>
+    </body>
+  </html>
