@@ -65,18 +65,19 @@
 
 <div class="container">
   <div class="row">
-  <div class="container">
-    <ul class="nav nav-tabs">
-     <li class="active"><a href="#">Элемент 1 <span class="badge">18</span></a></li>
-     <li><a href="#">Элемент 2 <span class="badge">19</2span></a></li>
-     <li><a href="#">Элемент 3 <span class="badge">22</span></a></li>
-     <li><a href="#">Элемент 4 <span class="badge">11</span></a></li>
-    </ul>
+    <div class="container">
+      <ul class="nav nav-tabs">
+        <li class="active"><a href="#">Элемент 1 <span class="badge">18</span></a></li>
+        <li><a href="#">Элемент 2 <span class="badge">19</span></a></li>
+        <li><a href="#">Элемент 3 <span class="badge">22</span></a></li>
+        <li><a href="#">Элемент 4 <span class="badge">11</span></a></li>
+      </ul>
+    </div>
   </div>
-  </div>
+
   <!-- Карточки -->
-  <div class="row">
-    <div class="col-xs-6 col-sm-4">
+  <div class="row masonry" data-columns>
+    <div>
       <div class="thumbnail">
         <img src="http://placehold.it/400x240" alt="">
         <div class="caption">
@@ -86,7 +87,7 @@
         </div>
       </div>
     </div>    
-    <div class="col-xs-6 col-sm-4">
+    <div>
       <div class="thumbnail">
         <img src="http://placehold.it/400x240" alt="">
         <div class="caption">
@@ -96,7 +97,7 @@
         </div>
       </div>
     </div>    
-    <div class="col-xs-6 col-sm-4">
+    <div>
       <div class="thumbnail">
         <img src="http://placehold.it/400x240" alt="">
         <div class="caption">
@@ -106,7 +107,7 @@
         </div>
       </div>
     </div>     
-    <div class="col-xs-6 col-sm-4">
+    <div>
       <div class="thumbnail">
         <img src="http://placehold.it/400x240" alt="">
         <div class="caption">
@@ -116,7 +117,7 @@
         </div>
       </div>
     </div>     
-    <div class="col-xs-6 col-sm-4">
+    <div>
       <div class="thumbnail">
         <img src="http://placehold.it/400x240" alt="">
         <div class="caption">
@@ -126,7 +127,7 @@
         </div>
       </div>
     </div>     
-    <div class="col-xs-6 col-sm-4">
+    <div>
       <div class="thumbnail">
         <img src="http://placehold.it/400x240" alt="">
         <div class="caption">
@@ -137,11 +138,13 @@
       </div>
     </div>    
 </div>
+</div>
 
 
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-  <script src="js/bootstrap.js"></script>
+  <script src="js/bootstrap.js"></script>  
+  <script src="js/salvattore.min.js"></script>
   <script src="https://use.fontawesome.com/53600a49fe.js"></script>
 </body>
 </html>
